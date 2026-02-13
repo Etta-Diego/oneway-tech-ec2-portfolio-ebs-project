@@ -64,7 +64,7 @@ Outbound rules are left as default (allow all traffic).
    - **Private key format**: `.pem`
 3. Download the key pair file and store it securely.
 
-> **Note:** The private key file cannot be downloaded again once lost.
+**Note:** The private key file cannot be downloaded again once lost.
 
 ---
 
@@ -396,6 +396,7 @@ http://<EC2_PUBLIC_IP>
 
 Successful image display indicates that the migration and symbolic link configuration were successful.
 
+
 ### Summary of Commands
 
 ```bash
@@ -410,7 +411,6 @@ sudo systemctl restart httpd
 This lab demonstrated how to migrate website images to an EBS volume for persistent storage, create a symbolic link to maintain website structure, and verify functionality by restarting Apache and testing image display. Using an EBS volume ensures that website assets are preserved even if the EC2 instance is terminated or replaced.
 
 
-# Lab Report: Persistence Configuration for EBS Volume
 
 ## Objective
 The objective of this lab is to configure the attached EBS volume to automatically mount on system reboot using `/etc/fstab`, ensuring persistent storage for website files and images.
